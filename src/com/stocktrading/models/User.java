@@ -1,4 +1,5 @@
 package com.stocktrading.models;
+import java.time.LocalDateTime;
 
 /**
  * User class demonstrating inheritance from Person
@@ -13,12 +14,23 @@ public class User extends Person {
         this.username = username;
         this.password = password;
         this.portfolio = new Portfolio(10000.0); // Starting with $10,000
+        
     }
+    //constructor with ID (when loading from database)
     
     public User(int id, String username, String password, String name, String email) {
         super(id, name, email);
         this.username = username;
         this.password = password;
+    }
+
+    //Constructor with all fields (for database loading with portfolio)
+    public User(int id, String username, String password, String name, String email, Portfolio portfolio) {
+        super(id, name, email);
+        this.username = username;
+        this.password = password;
+        this.portfolio = portfolio;{
+
     }
     
     @Override
