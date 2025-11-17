@@ -29,25 +29,39 @@ public class User extends Person {
         super(id, name, email);
         this.username = username;
         this.password = password;
-        this.portfolio = portfolio;{
+        this.portfolio = portfolio;
 
     }
     
-    @Override
-    public String getRole() {
-        return "TRADER";
-    }
-    
-    // Getters and setters
-    public String getUsername() { return username; }
-    public void setUsername(String username) { this.username = username; }
-    public String getPassword() { return password; }
-    public void setPassword(String password) { this.password = password; }
-    public Portfolio getPortfolio() { return portfolio; }
-    public void setPortfolio(Portfolio portfolio) { this.portfolio = portfolio; }
     
     @Override
     public String toString() {
         return "User{username='" + username + "', name='" + name + "', email='" + email + "'}";
     }
-}
+        public String getRole() {
+            return "TRADER";
+        }
+        //Getters and setters
+        public String getUsername() {
+            return username;
+        }
+        public void setUsername(String username) {
+            this.username = username;
+
+        }
+        public String getPassword() {
+            return password;
+        }
+        public void setPassword(String password) {
+            this.password = password;
+        }
+        public Portfolio getPortfolio() {
+            return portfolio;
+        }
+        public void setPortfolio(Portfolio portfolio) {
+            this.portfolio = portfolio;
+        }
+
+
+    }
+

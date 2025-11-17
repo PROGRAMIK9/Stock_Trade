@@ -40,7 +40,7 @@ public class StockData {
     public double getLow() {
         return low;
     }
-    public double getClose() {
+    public double getclose() {
         return close;
     }
     public long getVolume() {
