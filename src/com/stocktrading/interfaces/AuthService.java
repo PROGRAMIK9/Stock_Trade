@@ -10,4 +10,9 @@ public interface AuthService {
     boolean register(String username, String password, String email);
     void logout(User user);
     boolean isAuthenticated(User user);
+<<<<<<< HEAD
+=======
+    boolean userExists(String username);
+    boolean changePassword(User user, String oldPassword, String newPassword);  
+>>>>>>> 40f29cea799d793883ef09eb7b60676533eb5699
 }
